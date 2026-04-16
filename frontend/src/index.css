@@ -1,0 +1,301 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  /* height: 500px; */
+  min-height: 100vh;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIFExawxp46Gv-ZqiqQtFADbtBLjN9CRbQ5Q&s");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #000000;
+  color: white;
+
+}
+
+.navbar .logo {
+  width: 30%;
+  font-family: cursive;
+  font-size: 50px;
+  font-weight: 900;
+  color: aqua;
+}
+
+.navbar .nav-links {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  font-size: 25px;
+  font-weight: 500;
+
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+
+}
+
+.nav-links a:hover {
+  color: #1abc9c;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.nav-links button:hover {
+  color: #1abc9c;
+}
+
+/* Home */
+
+.home {
+  /* height: 600px; */
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  /* padding:50px; */
+
+  /* gap: 0px; */
+  min-height: calc(100vh - 200px);
+}
+
+.home-left {
+  width: 50%;
+  color: white;
+  margin-left: 30px;
+  color: #063b30;
+  font-size: 20px;
+}
+
+.home-right img {
+  width: 300px;
+}
+
+/* Quiz subjects */
+
+.quiz-subjects {
+  text-align: center;
+  padding: 40px;
+  min-height: calc(100vh - 160px);
+  /* Fill space between nav and footer */
+}
+
+.subject-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #a79406;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Quiz */
+
+.quiz-page {
+  text-align: center;
+  padding: 30px;
+  min-height: calc(100vh - 160px);
+}
+
+.question button {
+  margin: 5px;
+}
+
+.options-row {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.option {
+  padding: 12px 20px;
+  border: 2px solid #3498db;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 120px;
+  text-align: center;
+  position: relative;
+}
+
+.option:hover {
+  background: #ecf5ff;
+}
+
+.option-number {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.selected {
+  background: #d4edda;
+  border-color: #28a745;
+}
+
+.tick {
+  color: green;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.question-number {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.question-text {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.options-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin: auto;
+}
+
+.option {
+  padding: 12px 15px;
+  border: 2px solid #3498db;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.option:hover {
+  background: #ecf5ff;
+}
+
+.option-number {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.selected {
+  background: #d4edda;
+  border-color: #28a745;
+}
+
+.tick {
+  color: green;
+  font-weight: bold;
+  float: right;
+}
+
+.quiz-page {
+  text-align: center;
+  padding: 40px;
+}
+
+.quiz-page h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.quiz-page button {
+  padding: 15px 40px;
+  font-size: 20px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.quiz-page button:hover {
+  background: #1abc9c;
+}
+
+/* Forms */
+
+
+.center-form {
+  width: 300px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 220px);
+  justify-content: center;
+}
+
+.center-form input {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.center-form button {
+  padding: 10px;
+  background: #a78406;
+  color: white;
+  border: none;
+}
+
+/* Services */
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  padding-top: 50px;
+  min-height: calc(100vh - 160px);
+}
+
+
+
+
+
+/* Footer */
+
+.footer {
+  /* height: 150px; */
+  background: #212020;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  /* margin-top:40px; */
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+a:visited {
+  color: white;
+}
