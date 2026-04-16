@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://exam-project-backend.onrender.com',
+        target: 'https://exam-project-backend-n1iv.onrender.com',
         changeOrigin: true
       }
     }
